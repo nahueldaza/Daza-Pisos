@@ -1,0 +1,325 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.responsive{
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    background-color: rgb(221, 218, 212);
+    position: sticky;
+    top: 0;
+    flex-basis: 50px;
+}
+.titulo{
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font-size:22px;
+    width: 7%;
+    font-family: sans-serif;
+    margin-left: 20px;
+    border-bottom: solid rgb(138, 199, 220) 3px;
+}
+.li{
+    width: 150px;
+    height: 30px;
+    position: relative;
+    left: 1440px;
+    display: inline-block;
+    font-size: 20px;
+    bottom: 20px;
+}
+.li a{
+    text-decoration: none;
+    margin:10px;
+    color: black;
+
+}
+
+.li:hover{
+    color: white;
+}
+.li:hover > a{
+    color: white;
+}
+
+.main{
+    flex-grow: 1;
+    background-color: lightslategray;
+}
+h5{
+    margin:20px auto;
+    color: rgb(212, 205, 205);
+    font-family:sans-serif;
+    font-size: 2em;
+    text-align: center;
+    width: 20%;
+}
+.linea{
+    border: solid 2px lightblue;
+    width:8%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.box{
+    margin-top: 100px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3,534px);
+    grid-template-rows: repeat(3,534px);
+    grid-gap: 50px;
+}
+
+
+.trayectoria{
+    text-align: center;
+    position: relative;
+    width: 480px;
+    height: 80px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    top: -200px;
+    left: 30px;
+    color: white;
+    border: solid 4px white;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    opacity: 0;
+}
+
+
+.img2:hover{
+    opacity: .5;
+}
+.caja2:hover>.trayectoria{
+    opacity: 1;
+
+}
+
+.avalo{
+    text-align: center;
+    position: relative;
+    width: 480px;
+    height: 80px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    top: -200px;
+    left: 30px;
+    color: white;
+    border: solid 4px white;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    opacity: 0;
+}
+.img3:hover{
+    opacity: .5;
+}
+.caja3:hover>.avalo{
+    opacity: 1;
+}
+
+
+.presentacion{
+    text-align: center;
+    position: relative;
+    width: 480px;
+    height: 80px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    top: -200px;
+    left: 30px;
+    color: white;
+    border: solid 4px white;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.img1:hover{
+    opacity: .5;
+}
+.caja1:hover>.presentacion{
+    opacity: 1;
+}
+
+
+.asesoramiento{
+    background-color: rgb(135, 85, 65);
+    height: 140px;
+    text-align: center;
+    margin-top: 100px;
+}
+.asesoramiento p{
+    font-size: 23px;
+    font-style: normal;
+    position: relative;
+    top: 60px;
+
+}
+
+.whatsapp{
+    position: relative;
+    left: 1260px;
+    top: 28px;
+    font-size: 27px;
+    width: 10%;
+}
+.whatsapp:hover{
+    color: white;
+}
+.whatsapp:hover>a{
+    color: white;
+}
+.whatsapp a{
+    color: black;
+    text-decoration: none;
+}
+.footer{
+    background-color: rgb(40, 38, 38);
+    text-align: center;
+    color: rgb(107, 105, 105);
+    font-size: 12px;
+    flex-basis: 50px;
+}
+span{
+    position: relative;
+    top: 20px;
+}
+
+
+
+@media only screen and (max-width:850px) {
+    .container{
+        display: none;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+    }
+    .header__responsive{
+        background-color: rgb(221, 218, 212);
+        flex-basis: 4%;
+    }
+    .main__responsive{
+        background-color: lightslategray;
+        flex-basis:100%;
+    }
+    .footer__responsive{
+        background-color: rgb(40, 38, 38);
+        flex-basis: 4%;
+        text-align: center;
+    }
+    .li__responsive{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .hola{
+        margin: 12px;
+        text-align: right;
+        width: 30%;
+        margin-left: 20px;
+        float: right;
+    }
+    .brand{
+        width: 30%;
+        margin: 35px 15px;
+        border-bottom: solid 4px lightblue;
+    }
+    .li__responsive a {
+        color: black;
+        text-decoration: none;
+        margin-left: 7px;
+    }
+
+    .pisos{
+        margin-top: 20px;
+        text-align: center;
+        color: rgb(212, 205, 205);
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    .decoration{
+        width: 150px;
+        height: 50px;
+        border-top: solid 5px lightblue;
+        margin-top: 15px;
+        position: relative;
+        left: 30%;
+    }
+    .box__responsive{
+        display: flex;
+        flex-direction: column;
+    }
+    .foto{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .primero{
+        display: inline-block;
+        position: relative;
+        color: white;
+        width: 70%;
+        font-family: 'Inter', sans-serif;
+        border-bottom: 2px solid lightblue;
+    }
+    .segundo{
+        display: inline-block;
+        position: relative;
+        color: white;
+        width: 70%;
+        font-family: 'Inter', sans-serif;
+        border-bottom: 2px solid lightblue;
+    }
+    .tercero{
+        display: inline-block;
+        position: relative;
+        color: white;
+        width: 70%;
+        font-family: 'Inter', sans-serif;
+        border-bottom: 2px solid lightblue;
+    }
+
+
+
+
+
+
+
+
+
+
+    .asesoramiento__responsive{
+        background-color: rgb(135, 85, 65);
+        margin-top: 130px;
+        text-align: center;
+        padding: 30px;
+    }
+    .whatsapp__responsive a{
+        color: black;
+        text-decoration: none;
+    }
+    .footer__responsive span{
+        position: relative;
+        top: -1px;
+        font-size: 6px;
+        color: rgb(107, 105, 105);
+    }
+}
